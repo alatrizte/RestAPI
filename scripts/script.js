@@ -14,7 +14,7 @@ insertForm.style.display = 'none';
 
 
 //// IMPORTANTE ESTA URL APUNTA A LA DIRECCION DE LA API ////
-fetch('http://localhost/unidad_08/RestAPI/api.php')
+fetch('http://localhost/api.php')
     .then(consulta => consulta.json())
     .then(respuesta => mostrar(respuesta));
 
