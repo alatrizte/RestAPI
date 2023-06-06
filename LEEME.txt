@@ -1,18 +1,20 @@
+Aplicación para creación de APIs en base a una base de datos mysql y de una tabla específica de esta.
+
 ****** VARIABLES *****
-Como esta es una aplicación comodín, el archivo "src/variables.php" es donde se indica el nombre de la Base de Datos y la tabla 
-desde la que quiero que se cree mi API.
+El archivo "src/variables.php" es donde se indica el nombre de la Base de Datos y la tabla 
+desde la que se crea la API.
 
 En el archivo de la "clases/DataBase.php" es donde se realiza la conexión a la base de datos y desde donde se maneja.
 Es una conexión tipo PDO y en el __constructor indica los parametros de usuario y contraseña.
 
 ***** api.php *****
-Es la api en sí, con ella realizo las consultas a la BBDD y mando los resultados a cliente.php. Es la encargada de gestionar las 
-consultas mediante CURL, tal y como vimos en el curso.
+Es la api en sí, con ella se realizan las consultas a la BBDD y manda los resultados a cliente.php. Es la encargada de gestionar las 
+consultas mediante CURL.
 
 ***** cliente.php *****
 Es el "escaparate" de la api. Con esta aplicación podemos LEER, INSERTAR, MODIFICAR Y ELIMINAR elementos de la base de datos en la tabla que escojamos.
 
 ***** index.php *****
-Es la última fase de todo el proceso, es la comprovación de que la API funcionaba. Es una aplicación que se basa en JavaScript
-donde se encarga de mostrar los datos. Es un mero motor de muestra. En este archivo es llama al archivo cliente.php, la diferencia 
-entre este index.php y cliente.php es que en el index.php el listado se realiza mediante una comunicación AJAX con la api.php.
+Es una aplicación que se basa en JavaScript donde se encarga de mostrar los datos. Es un mero motor de muestra. Desde este archivo 
+se llama al archivo cliente.php, la diferencia entre este index.php y cliente.php es que en el index.php el listado se realiza mediante
+una comunicación AJAX con la api.php.
