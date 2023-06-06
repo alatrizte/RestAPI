@@ -18,7 +18,7 @@ include ('src/variables.php');
 $db = new Database($nombreDB);
 
 //// IMPORTANTE!!!! ESTA URL APUNTA A LA DIRECCION DE LA API ////
-$url_api = 'http://localhost/unidad_08/RestAPI/api.php';
+$url_api = 'http://localhost/RestAPI/api.php';
 
 $tipos = getTypeCampo($db, $nombreDB, $tabla);
 $campos = getCampos($tipos);
