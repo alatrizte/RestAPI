@@ -7,7 +7,7 @@ class Database {
     public $pass;
     public $conn;
 
-    public function __construct($dbname, $username='gestor', $pass='S3creto_')
+    public function __construct($dbname, $username='user_name', $pass='password')
     {   
         $host = 'localhost';
         $this->dbname = $dbname;

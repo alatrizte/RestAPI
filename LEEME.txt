@@ -2,17 +2,15 @@
 Como esta es una aplicación comodín, el archivo "src/variables.php" es donde se indica el nombre de la Base de Datos y la tabla 
 desde la que quiero que se cree mi API.
 
-En el archivo de la "clases/DataBase.php" es donde realizo la conexión a la base de datos y desde donde se maneja.
-Es una conexión tipo PDO y en el __constructor indico los parametros de usuario y contraseña.
-
+En el archivo de la "clases/DataBase.php" es donde se realiza la conexión a la base de datos y desde donde se maneja.
+Es una conexión tipo PDO y en el __constructor indica los parametros de usuario y contraseña.
 
 ***** api.php *****
 Es la api en sí, con ella realizo las consultas a la BBDD y mando los resultados a cliente.php. Es la encargada de gestionar las 
 consultas mediante CURL, tal y como vimos en el curso.
 
 ***** cliente.php *****
-Es el "escaparate" de la api. Es una adaptación de los ejercicios que estuvimos haciendo en clase. Con esta aplicación podemos 
-LEER, INSERTAR, MODIFICAR Y ELIMINAR elementos de la base de datos en la tabla que escojamos.
+Es el "escaparate" de la api. Con esta aplicación podemos LEER, INSERTAR, MODIFICAR Y ELIMINAR elementos de la base de datos en la tabla que escojamos.
 
 ***** index.php *****
 Es la última fase de todo el proceso, es la comprovación de que la API funcionaba. Es una aplicación que se basa en JavaScript
